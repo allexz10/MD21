@@ -6,9 +6,7 @@ const shopItems = [
       // eslint-disable-next-line max-len
       'https://i1.wp.com/evs-translations.com/blog/wp-content/uploads/2015/04/Macaron_65102300_XS.jpg?resize=300%2C200&ssl=1',
     type: 'sweets',
-    onClick: () => {
 
-    },
     itemId: 1,
   },
   {
@@ -17,9 +15,7 @@ const shopItems = [
     imgSrc:
       'https://static.vecteezy.com/system/resources/thumbnails/000/712/873/small/cupcakes.jpg',
     type: 'cupcakes',
-    onClick: () => {
 
-    },
     itemId: 2,
   },
   {
@@ -30,9 +26,7 @@ const shopItems = [
       'https://static.vecteezy.com/system/resources/thumbnails/002/600/729/small/delicious-chocolate-homemade-cake-with-strawberries-photo.jpg',
     type: 'cakes',
     itemId: 3,
-    onClick: () => {
 
-    },
   },
   {
     title: 'Doughnats item',
@@ -41,21 +35,17 @@ const shopItems = [
       'https://tonsofthanks.com/wp-content/uploads/2021/03/Many-donuts-300x200.jpg',
     type: 'doughnats',
     itemId: 4,
-    onClick: () => {
 
-    },
   },
 
   {
     title: 'Sweet item',
-    price: '10',
+    price: 10,
     imgSrc:
   'https://refsol.com/wp-content/uploads/2020/09/AdobeStock_84081652-300x200.jpg',
     type: 'sweets',
     itemId: 5,
-    onClick: () => {
 
-    },
   },
   {
     title: 'Cupcake item',
@@ -64,9 +54,7 @@ const shopItems = [
   'https://www.foodiesfeed.com/wp-content/uploads/2019/01/raspberry-cupcake-300x200.jpg',
     type: 'cupcakes',
     itemId: 6,
-    onClick: () => {
 
-    },
   },
   {
     title: 'Cake item',
@@ -74,9 +62,7 @@ const shopItems = [
     imgSrc:
   'https://www.indulgewithmimi.com/wp-content/uploads/2015/02/macaron-surprise-cake-300x200.jpg',
     type: 'cakes',
-    onClick: () => {
 
-    },
     itemId: 7,
   },
   {
@@ -86,9 +72,7 @@ const shopItems = [
   'https://greenteahp.me/wp-content/uploads/2015/12/Green-Tea-HP-Health-7-Doughnuts-300x200.jpg',
     type: 'doughnats',
     itemId: 8,
-    onClick: () => {
 
-    },
   },
 
   {
@@ -97,9 +81,7 @@ const shopItems = [
     imgSrc: 'https://i.ebayimg.com/images/g/Sc8AAOSwNSxVAgjQ/s-l300.jpg',
     type: 'sweets',
     itemId: 9,
-    onClick: () => {
 
-    },
   },
   {
     title: 'Cupcake item',
@@ -108,9 +90,7 @@ const shopItems = [
   'https://michaelfolckdds.com/wp-content/uploads/2019/08/Virginia-Beach-Cupcake-Festival--300x200.jpeg',
     type: 'cupcakes',
     itemId: 10,
-    onClick: () => {
 
-    },
   },
 
   {
@@ -121,9 +101,7 @@ const shopItems = [
   'https://static.vecteezy.com/system/resources/thumbnails/000/711/120/small/closeup-cranberry-pie-on-gray-background.jpg',
     type: 'cakes',
     itemId: 11,
-    onClick: () => {
 
-    },
   },
   {
     title: 'Doughnats item',

@@ -3,7 +3,7 @@ import './Card.scss';
 
 type Props = {
     title: string;
-    price: string | number;
+    price: number;
     imgSrc: string;
     type: string;
     onClick: ()=> void;

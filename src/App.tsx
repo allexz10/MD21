@@ -14,21 +14,12 @@ import SectionWelcome from './components/SectionWelcome/SectionWelcome';
 import SectionAbout from './components/SectionAbout/SectionAbout';
 import buttonName from './data/ButtonName';
 
+const shopItemCountandPrice:number[] = [0, 0];
 const App = () => {
   const [filteredItems, setFilteredItems] = useState(shopItems);
   const [searchBarValue, setSearchBarValue] = useState('');
-  const [shopBasketValue, setShopBasketValue] = useState('');
 
-  const addShopItemtoBasket = () => {
-    let counter:number = 0;
-    counter += 1;
-    setShopBasketValue(counter.toString());
-    filteredItems.map((item, index) => {
-      const { price } = item;
-      // eslint-disable-next-line no-console
-      return setShopBasketValue(counter.toString());
-    });
-  };
+  const [shopBasketValue, setShopBasketValue] = useState(shopItemCountandPrice);
 
   const itemFilter = (event: { target: { innerText: string } }) => {
     const value = event.target.innerText.toLowerCase();
@@ -85,7 +76,7 @@ const App = () => {
       <SearchBar onChange={searchFilter} value={searchBarValue} />
       <div className="card__wrapper">
         {filteredItems.map(({
-          title, price, imgSrc, type, itemId, onClick,
+          title, price, imgSrc, type, itemId,
         }) => (
           <Card
             key={itemId}
@@ -93,7 +84,11 @@ const App = () => {
             imgSrc={imgSrc}
             title={title}
             price={price}
-            onClick={addShopItemtoBasket}
+            onClick={() => {
+              shopItemCountandPrice[0] += 1;
+              shopItemCountandPrice[1] += price;
+              setShopBasketValue([...shopItemCountandPrice]);
+            }}
           />
         ))}
       </div>
